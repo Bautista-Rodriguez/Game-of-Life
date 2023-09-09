@@ -2,7 +2,7 @@
 ## Introducción
 El juego de la vida (Conway's game of life) es un juego de cero jugadores, el cual determina sus próximos estados a partir de un estado inicial y sin necesidad de una interacción externa. Fue creado por el matemático John Conway en 1970.
 
-![MostrarGif](readme-rsc/GoL.gif)
+![MostrarGif](readme-src/GoL.gif)
 
 
 ## Reglas
@@ -18,7 +18,7 @@ Para poder jugar, se utilizan las siguientes teclas del teclado:
 - S (del inglés "Slower"): Ralentiza la velocidad a la que la simulación cambia de estado.
 - D (del inglés "Delete"): Borra el estado actual de la simulación.
 - F (del inglés "Faster"): Acelera la velocidad a la que la simulación cambia de estado.
-- P (del inglés "Pause"): Pausa/despausa la simulación.
+- P (del inglés "Pause"): Pausa/reanuda la simulación.
 - Botón izq. del mouse: activa/desactiva la celda que se presiona.
   
 ACLARACIÓN: El botón izq. y la tecla 'D' solo funcionan cuando el juego está en pausa.
@@ -27,6 +27,6 @@ ACLARACIÓN: El botón izq. y la tecla 'D' solo funcionan cuando el juego está 
 El código se basa en el patrón de arquitectura MVC. 
 - Modelo: El modelo se encarga de retornar y cambiar el estado actual de la simulación, así como los datos del tamaño de las celdas, la pantalla, y otros.
 - Vista: La vista se encarga de actualizar el estado del modelo una vez que este cambia.
-- Controlador: El controlador se encarga de recibir las entradas de usuario y manejarlas para cambiar la simulación. Cuando la simualción debe cambiar, envía un mensaje al modelo para actualizar las celdas, así como un mensaje a la vista para actualizar la interfaz de usuario.
+- Controlador: El controlador se encarga de recibir las entradas de usuario y manejarlas para cambiar la simulación. Cuando la simulación debe cambiar, envía un mensaje al modelo para actualizar las celdas, así como un mensaje a la vista para actualizar la interfaz de usuario.
 
 La vista utiliza la biblioteca gráfica Swing para generar la interfaz de usuario.
